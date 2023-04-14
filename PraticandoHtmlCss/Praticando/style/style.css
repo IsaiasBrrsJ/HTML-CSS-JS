@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Android";
+    src: url("/font/idroid.otf") format("opentype");
+    font-weight: bold;
+    font-size: normal;
+    color: red;;
+
+}
+:root{
+    --cor1: rgb(255,255,100);
+    --cor2: rgba(182, 45, 45, 0.856);
+    --cor3: rgba(160, 26, 3, 0.466);
+    --font-android: "Android"
+}
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    background-color: var(--cor3);
+    padding: 30px;
+    text-align: center;
+}
+header h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(25, 0, 0, 2);
+}
+
+main{
+    background-color: var(--cor2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ 
+    max-width: 860px;
+    margin: auto;
+
+}
+main > h1{
+    font-family: var(--font-android);
+   color: white;
+   margin-left: 25px;
+}
+main p{
+    text-indent: 2%;
+    line-height: 1.4em;
+    padding: 2px;
+    text-align: justify;
+    padding: 5px;
+    margin: 5px 30px;
+}
+main h3{
+    font-family: var(--font-android);
+    color: white;
+    margin-left: 25px;
+    background-image: linear-gradient(to right, black, grey);
+    margin-right: 30px;
+    border-bottom-right-radius: 5px;
+    margin-top: 30px;
+    padding: 3px;
+    border-top-left-radius:  5px;
+    box-shadow: 0.2px 2px red;
+}
+
+.video{
+    background-color: orange;
+    position: relative;
+    padding: 18%;
+    margin: 0px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.317);
+    padding-bottom: 20%;
+}
+
+.video > iframe{
+    position: absolute;
+       
+   top: 5%;
+   left: 4%;
+   bottom: 80px;
+   width: 90%;
+   height: 90%;
+   box-shadow: 2px 2px black;
+  
+}
+
+main > aside{
+    padding-bottom: 10%;
+    margin-left: 5%;
+    
+}
+
+main aside > p{
+   text-indent: 0px;
+}
+main aside > h5{
+   
+    margin-top: 5%;
+    margin-left: 2px;
+    color: white;
+    text-decoration: overline;
+    text-shadow: 2px 2px black;
+    text-align: justify;
+  
+}
+
+ aside > h5:hover{
+    
+  display: inline-block;
+    background-color: rgb(12, 12, 12);
+    padding: 1%;
+    transition: 0.5s;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: cursive;
+    border-radius: 15%;
+}
+
+footer{
+    margin-top: 10%;
+    background-color: white;
+    padding-bottom: 10%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+footer h2{
+ text-align: center;
+}
+
+footer nav{
+   columns: 3;
+   padding-top: 30px;
+   padding-left: 20%;
+
+}
+
+footer nav ul > li{
+    padding: 10px;
+    list-style: none;
+    text-align: justify;
+}
+
+footer nav ul li >a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer nav ul > .facebook::before{
+    content: "☹️";
+}
+footer nav ul>.insta::before {
+    content: "😒";
+}
+footer nav ul>.whats::before {
+    content: "🥸";
+}
+footer nav ul>.a::before {
+    content: "🤪";
+}
+footer nav ul>.b::before {
+    content: "🥶";
+}
+footer nav ul>.c::before {
+    content: "😱";
+}
