@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    background-color: red;
+    padding: 40px;
+    border: 2px solid black;
+
+}
+
+header h1{
+   
+    text-align: center;
+    max-width: 500px;
+    font-weight: normal;
+    text-shadow: 1px 1px white;
+    margin: auto;
+    border: 2px solid black;
+}
+
+header p{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    max-height: 300px;
+    margin: auto;
+   
+}
+header nav{
+   
+    text-align: end;
+    position: relative;
+    top: 2.4em;
+    left: 2.0em;
+}
+header nav > a{
+  list-style: none;
+  padding: 5px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+header nav >a:hover{
+  padding: 5px;
+  transition: 0.7s;
+  background-color: black;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}

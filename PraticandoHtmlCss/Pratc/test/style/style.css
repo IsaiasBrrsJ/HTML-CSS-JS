@@ -1,0 +1,11 @@
+.pai{
+    background-color: blanchedalmond;
+    padding: 100px;
+    position: relative;
+}
+
+.fi{
+    background-color: red;
+    position: absolute;
+   
+}

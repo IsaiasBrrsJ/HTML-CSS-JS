@@ -64,7 +64,7 @@ header{
 header > h1{
     color: #ffff;
     font-size: 3em;
-    font-weight: nor;
+    font-weight: normal;
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
@@ -159,7 +159,7 @@ aside h3{
     color: #ffff;
     padding: 10px;
     margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 10px 0px 0px;
 }
 aside > ul{
 list-style-type: '\2714\00A0\00A0';
