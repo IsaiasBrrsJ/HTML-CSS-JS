@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando com tabelas</title>
+  </head>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    table {
+      background-color: white;
+      padding: 5px;
+      border-collapse: collapse;
+      width: 200px;
+
+      text-align: center;
+    }
+    tr > td,
+    th {
+      border: 2px solid red;
+    }
+    .idade,
+    .media {
+      text-align: end;
+    }
+  </style>
+  <body>
+    <h1>Praticando com tabelas</h1>
+    <!-- Tabelas simples
+    table
+     tr 
+      td
+    -->
+    <table>
+      <tr>
+        <td>A1</td>
+        <td>A2</td>
+        <td>A3</td>
+      </tr>
+      <tr>
+        <td>A1</td>
+        <td>B2</td>
+        <td>C3</td>
+      </tr>
+    </table>
+    <h2>Tabelas semanticas</h2>
+    <!-- 
+        Table
+         caption -> titulo da tabela
+        Thead
+            TH -> Titulo
+            TR -> Linha 
+            TD -> Dado da tabela
+        Tbody
+            TH -> Titulo
+            TR -> Linha 
+            TD -> Dado da tabela
+        Tfoot
+            TH -> Titulo
+            TR -> Linha 
+            TD -> Dado da tabela
+     -->
+    <table>
+      <caption>
+        Minha tabela teste
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">nome</th>
+          <th scope="col">sobrenome</th>
+          <th scope="col">idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>teste</td>
+          <td>aaaa</td>
+          <td class="idade">333</td>
+        </tr>
+        <tr>
+          <td>sssss</td>
+          <td>sdasdasd</td>
+          <td class="idade">330</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Media de Idades</th>
+          <td class="media" colspan="2">630</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
