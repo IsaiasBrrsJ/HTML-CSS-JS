@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando com tabelas</title>
+    <style>
+      table {
+        padding: 2px;
+        border-collapse: collapse;
+      }
+      table td,
+      th {
+        border: 2px solid red;
+        padding: 5px;
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Praticando com tabelas</h1>
+    <!-- 
+        tabelas normais
+        table tabelas
+         tr linha da tabela
+         td dados da linha da tabela
+     -->
+    <table>
+      <tr>
+        <td>Nome</td>
+        <td>Sobrenome</td>
+        <td>Idd</td>
+      </tr>
+      <tr>
+        <td>teste</td>
+        <td>ass</td>
+        <td>222</td>
+      </tr>
+    </table>
+    <h2>tabelas semânticas</h2>
+    <!-- 
+        table
+        thead
+        tbody
+        tfoot
+         caption -> legenda da tabela
+          th -> cabecalho
+           tr -> linha
+            td -> conteudo
+     -->
+    <table>
+      <caption>
+        teste teste
+      </caption>
+      <thead>
+        <th>Nome</th>
+        <th>sobrenome</th>
+        <th>idd</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>teste</td>
+          <td>teste</td>
+          <td>teste</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>final</th>
+          <td colspan="2">teste</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
