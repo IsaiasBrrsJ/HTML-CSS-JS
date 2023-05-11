@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="off" style="border: 2px solid black; display: inline-block; padding: 20px;">
+        <p>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" maxlength="8" autocomplete="name"/>
+        </p>
+        <p>
+            <label for="ss">Email: </label>
+            <input type="email" name="ss" id="ss" required autocomplete="email"/>
+        </p>
+        <p>
+            <label for="pwd">Senha: </label>
+            <input type="password" name="pwd" id="pwd" required maxlength="10">
+        </p>
+        <p style="text-align: center;">
+            <input type="submit" value="Enviar" />
+        </p>
+    </form>
+</body>
+</html>
