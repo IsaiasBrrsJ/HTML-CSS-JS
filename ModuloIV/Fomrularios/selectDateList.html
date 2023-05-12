@@ -49,5 +49,19 @@
         <input type="submit" value="Enviar">
       </p>
     </form>
+    <p>
+      <input type="range" name="val" id="val" min="0" max="5" value="5" oninput="outVal.innerHTML = Number(val.value)" >
+      <output id="outVal">5</output>
+    </p>
+    <p>
+      <h1>Praticando</h1>
+      <label for="nu1">Valor 1</label>
+      <input type="number" name="nu" id="nu1" oninput="vale.innerHTML = Number(nu1.value + nu2.value)">
+
+      <label for="nu2">Valor 1</label>
+      <input type="number" name="nu" id="nu2" oninput="vale.innerHTML = Number(nu1.value + nu2.value)">
+      Valor: 
+      <output id="vale">0</output>
+    </p>
   </body>
 </html>
