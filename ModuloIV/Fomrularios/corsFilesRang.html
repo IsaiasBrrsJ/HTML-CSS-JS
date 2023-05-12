@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Praticando com Formulários</h1>
+    <form action="act.php" style="display: inline-block">
+      <fieldset>
+        <legend>Cores</legend>
+        <p>
+          <label for="cores">Cores</label>
+          <input type="color" name="color" id="cores" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Ranger</legend>
+        <p>
+          <label for="nSatisfaca">Nível de satisfação</label>
+          <input
+            type="range"
+            id="satisfacao"
+            name="satisfacao"
+            min="1"
+            max="5"
+            value="2"
+          />
+        </p>
+        <p>
+          <label for="foto">Foto </label>
+          <input type="file" name="foto" id="foto" />
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar" />
+      </p>
+    </form>
+  </body>
+</html>
