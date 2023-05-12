@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="teste.php" style="display: inline-block">
+        <fieldset>
+          <legend>Genero</legend>
+          <p>
+            <input type="radio" name="Sexo" id="SexoM" value="M" checked />
+            <label for="SexoM">Masculino </label><br />
+            <input type="radio" name="Sexo" id="SexoF" value="F" />
+            <label for="SexoF">Feminino </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <p>
+            <label for="nome">Nome </label>
+            <input type="text" name="nome" id="nome" />
+          </p>
+          <p>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" />
+          </p>
+          <p>
+            <label for="pas">Senha </label>
+            <input type="password" name="pas" id="pas" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Esporte Favorito</legend>
+          <label for="Fut">Futebol</label>
+          <input type="checkbox" name="Fut" id="Fut" checked />
+          <label for="Bask">Basketball</label>
+          <input type="checkbox" name="Bask" id="Bask" />
+          <label for="Volei">Vôlei </label>
+          <input type="checkbox" name="Volei" id="Volei" />
+        </fieldset>
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+  </body>
+</html>
