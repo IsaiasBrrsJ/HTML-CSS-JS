@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SelectDateList</title>
+  </head>
+  <body>
+    <h1>Praticando com formulários</h1>
+    <form action="e.php" method="get">
+      <fieldset>
+        <legend>Select</legend>
+        <p>
+          <label for="listaCidades">Cidades </label>
+          <select name="cidades" id="listaCidade">
+            <optgroup label="Melhores Estados">
+              <option value="SP">Sao Paulo</option>
+              <option value="RO" selected>Rondônia</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="AC">Acre</option>
+            </optgroup>
+            <optgroup label="Estados medianos">
+              <option value="RR">Roraima</option>
+              <option value="AL">Alagoas</option>
+              <option value="TO">Tocantins</option>
+              <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>List input</legend>
+        <p>
+          <label for="Escolhas">Escolha</label>
+          <input type="text" name="ss" id="Escolhas" list="ss" />
+          <datalist id="ss">
+                <option value="Roraima"></option>
+                <option value="Rondonia"></option>
+                <option value="Rio de janeiro"></option>
+                <option value="Rio grande do sul"></option>
+                <option value="Rio grande do norte"></option>
+
+            </optgroup>
+          </datalist>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+  </body>
+</html>
