@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(15, 14, 14);
+      }
+      main {
+        background-color: rgba(255, 255, 255, 0.849);
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 11px rgb(91, 7, 226);
+        max-width: 400px;
+        margin: auto;
+        border-radius: 5px;
+      }
+      form div {
+        text-align: center;
+        margin: 10px;
+      }
+
+      form div > input {
+        padding: 3px;
+        border-radius: 3px;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      @media screen and (orientation: portrait) {
+        aside > div {
+          background-image: url("../mq002/images/cev-portrait.jpg");
+          background-size: contain;
+          background-position: center bottom;
+          background-repeat: no-repeat;
+          height: 50vh;
+        }
+      }
+
+      @media screen and (orientation: landscape) {
+        aside > div {
+          background-image: url("../mq002/images/cev-landscape.jpg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 50vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Formulários Teste</h2>
+      <form action="asp.php" method="post" autocomplete="off">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="na" id="nome" />
+          </div>
+          <div>
+            <label for="Email">Email: </label>
+            <input type="email" name="Email" id="Email" />
+          </div>
+          <div>
+            <label for="Passw">Senha: </label>
+            <input type="password" name="Passw" id="Passw" />
+          </div>
+          <div>
+            <input type="radio" name="Sex" id="SexM" checked />
+            <label for="SexM">Masculino </label>
+            <input type="radio" name="Sex" id="SexF" />
+            <label for="SexF">Feminino </label>
+          </div>
+          <div>
+            <input type="checkbox" name="V" id="Rd" />
+            <label for="Rd">Futebol</label>
+            <input type="checkbox" name="Va" id="Rda" />
+            <label for="Rda">Volei</label>
+            <input type="checkbox" name="Vaa" id="Rdaa" />
+            <label for="Rdaa">Teste</label>
+          </div>
+          <div></div>
+        </fieldset>
+        <fieldset>
+          <legend>Soma</legend>
+          <label for="N1">N1 </label>
+          <input
+            type="number"
+            name="num1"
+            id="num1"
+            min="0"
+            max="5"
+            step="0.1"
+            oninput="out.inner.HTML = Number(num1.value + num2.value)"
+          />
+          <br />
+          <br />
+          <label for="N2">N2 </label>
+          <input
+            type="number"
+            name="num2"
+            id="num2"
+            min="0"
+            max="5"
+            step="0.1"
+            oninput="out.innerHTML = Number(num1.value + num2.value)"
+          />
+          <output id="out">0</output>
+          <p>
+            <input
+              type="range"
+              name="rg"
+              id="rg"
+              min="0"
+              max="5"
+              oninput="aa.innerHTML = rg.value"
+            />
+            <output id="aa">3</output>
+          </p>
+        </fieldset>
+      </form>
+      <aside>
+        <h4>Imagens teste</h4>
+        <div></div>
+      </aside>
+    </main>
+  </body>
+</html>
