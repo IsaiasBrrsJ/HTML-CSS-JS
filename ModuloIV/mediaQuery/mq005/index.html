@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Media Query</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+          <li><a href="#">Opção 3</a></li>
+          <li><a href="#">Opção 4</a></li>
+          <li><a href="#">Opção 4</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <article>
+        <h2>Testando Media Queries</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          eaque, fuga, corrupti eveniet tempora hic accusantium sit earum
+          eligendi doloribus corporis blanditiis fugiat reiciendis dicta beatae
+          iure? Culpa, a expedita.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          labore, eveniet cumque est consectetur optio nesciunt laboriosam
+          soluta accusamus, modi quod maxime beatae quidem obcaecati pariatur
+          quo. Quidem, molestias suscipit!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi nemo
+          deserunt accusamus voluptas nisi exercitationem distinctio voluptatem
+          necessitatibus praesentium nesciunt assumenda ducimus impedit, esse
+          sequi, sit blanditiis non! Eum, debitis?
+        </p>
+      </article>
+    </main>
+    <script>
+      function clickMenu() {
+        itens.style.display = itens.style.display == "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
