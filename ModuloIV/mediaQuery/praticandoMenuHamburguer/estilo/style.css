@@ -1,0 +1,22 @@
+ #riscoUm, #riscoDois, #riscoTres{
+   
+    margin: 3px;
+    width: 15px;
+    color: white;
+    background-color: white;
+    border: 1px solid rgba(20, 46, 19, 0.801);
+  
+    text-align: center;
+  
+}
+#menuHamburguer{
+    display: inline-block;
+    background-color: white;
+}
+#menuHamburguer:hover{
+    background-color: red;
+    cursor: pointer;
+}
+menu{
+    display: none;
+}

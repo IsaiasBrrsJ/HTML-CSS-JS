@@ -15,7 +15,7 @@
     <header>
       <h1>Meu site</h1>
       <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-      <menu id="itens">
+      <menu id="menuHamburguer">
         <ul>
           <li><a href="#">Opção 1</a></li>
           <li><a href="#">Opção 2</a></li>
@@ -50,7 +50,9 @@
     </main>
     <script>
       function clickMenu() {
-        itens.style.display = itens.style.display == "block" ? "none" : "block";
+        var menuHamburguer = document.getElementById("menuHamburguer");
+        menuHamburguer.style.display =
+          menuHamburguer.style.display == "block" ? "none" : "block";
       }
     </script>
   </body>
