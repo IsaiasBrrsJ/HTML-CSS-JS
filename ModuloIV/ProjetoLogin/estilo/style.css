@@ -38,7 +38,7 @@ section#login{
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.480);
     transition: width .2s, height .2s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in;
 }
 
 section#login > div#imagem{
@@ -55,4 +55,9 @@ section#login > div#formulario{
     display: block;
     padding: 10px;
 
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
 }
